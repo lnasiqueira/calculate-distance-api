@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>DistanceCalculatorAPI</title>
+
+        <a href="historicQueries.html"><button>Historic of queries</button></a>
+        <p id="url"></p>
+
+        <script>
+            document.getElementById("url").innerHTML =
+                "Press the button above to historic of queries or use the url : "
+                + window.location.href
+                + "historicQueries.html";
+        </script>
+    </head>
+
+    <body>
+        <h1>Distance calculator</h1>
+
+        <div>
+            <input id="source" placeholder="Type the  source">
+            <input id="destination" placeholder="Type the destination">
+            <button onclick="main()"> Calculate</button><br>
+        </div>
+
+        <div id="result"></div>
+
+        <script src="js/calculator.js"></script>
+    </body>
+</html>

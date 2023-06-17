@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>HistoricOfDistanceCalculatorAPI</title>
+    </head>
+
+    <body>
+        <h1>Historic of queries</h1>
+
+        <div id="historicQueries"></div>
+
+        <script>
+            document.getElementById("historicQueries").innerHTML = JSON.stringify(JSON.parse(localStorage.getItem('resultOfHistoricQueries')))
+        </script>
+    </body>
+</html>
